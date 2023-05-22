@@ -28,11 +28,11 @@ struct ContentView: View {
         // TOOLBAR IMAGE
         switch gridColumn {
         case 1:
-            toolbarIcon = "square.grid.2x2"
-        case 2:
-            toolbarIcon = "square.grid.3x2"
-        case 3:
             toolbarIcon = "rectangle.grid.1x2"
+        case 2:
+            toolbarIcon = "square.grid.2x2"
+        case 3:
+            toolbarIcon = "square.grid.3x2"
         default:
             toolbarIcon = "square.grid.2x2"
         }
@@ -67,6 +67,11 @@ struct ContentView: View {
                         .transition(.slide)
                         .animation(.easeInOut)
                         .padding(10)
+                        .onAppear {
+                            withAnimation(.easeIn) {
+                                gridSwitch()
+                            }
+                        }
                     } //: SCROLL
                 } //: CONDITION
             } //: GROUP
