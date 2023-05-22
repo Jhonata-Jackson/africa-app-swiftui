@@ -28,7 +28,7 @@ struct MainView: View {
                     Text("Locations")
                 }
             
-            GallaryView()
+            GalleryView()
                 .tabItem {
                     Image(systemName: "photo")
                     Text("Gallery")
