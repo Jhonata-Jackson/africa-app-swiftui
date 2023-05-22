@@ -48,6 +48,8 @@
 		A2E325592A1A9EB200090D00 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E325582A1A9EB200090D00 /* VideoListItemView.swift */; };
 		A2E3255B2A1AA78700090D00 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3255A2A1AA78700090D00 /* VideoPlayerView.swift */; };
 		A2E3255E2A1AA92900090D00 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3255D2A1AA92900090D00 /* VideoPlayerHelper.swift */; };
+		A2EB14E72A1BBC8B001762C1 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB14E62A1BBC8B001762C1 /* CreditsView.swift */; };
+		A2EB14EA2A1BBED2001762C1 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB14E92A1BBED2001762C1 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		A2E325582A1A9EB200090D00 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		A2E3255A2A1AA78700090D00 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		A2E3255D2A1AA92900090D00 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		A2EB14E62A1BBC8B001762C1 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		A2EB14E92A1BBED2001762C1 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		A266F12B2A1943D700EF5CEA /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				A2EB14E82A1BBEB6001762C1 /* Modifier */,
 				A2E3255C2A1AA91100090D00 /* Helper */,
 				A266F1842A194E9600EF5CEA /* Extension */,
 				A266F1812A194C5F00EF5CEA /* Model */,
@@ -205,6 +210,7 @@
 				A20661522A1ADA1700000B19 /* MapAnnotationView.swift */,
 				A2D2272F2A1B79B30029AB62 /* MotionAnimationView.swift */,
 				A2D227312A1B8FDD0029AB62 /* AnimalGridItemView.swift */,
+				A2EB14E62A1BBC8B001762C1 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +240,14 @@
 				A2E3255D2A1AA92900090D00 /* VideoPlayerHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		A2EB14E82A1BBEB6001762C1 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB14E92A1BBED2001762C1 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,8 +355,10 @@
 				A2D227322A1B8FDD0029AB62 /* AnimalGridItemView.swift in Sources */,
 				A27965772A1967D8002E2FDB /* InsetGalleryView.swift in Sources */,
 				A2E325592A1A9EB200090D00 /* VideoListItemView.swift in Sources */,
+				A2EB14E72A1BBC8B001762C1 /* CreditsView.swift in Sources */,
 				A266F1862A194EAB00EF5CEA /* CodableBundleExtension.swift in Sources */,
 				A2D227302A1B79B30029AB62 /* MotionAnimationView.swift in Sources */,
+				A2EB14EA2A1BBED2001762C1 /* CenterModifier.swift in Sources */,
 				A27965752A19666B002E2FDB /* HeadingView.swift in Sources */,
 				A2E3255B2A1AA78700090D00 /* VideoPlayerView.swift in Sources */,
 			);
@@ -489,6 +505,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjpontodev.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,6 +538,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjpontodev.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
