@@ -62,7 +62,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   $ git clone https://github.com/Jhonata-Jackson/africa-app-swiftui.git
 
   # Abrir projeto no Xcode:
-     Restart.xcodeproj
+     Africa.xcodeproj
 
 ```
 
